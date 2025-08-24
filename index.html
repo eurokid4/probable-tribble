@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<style>
+    h1  {
+  color: #FEA405;
+  text-align: center;
+  font-family: monospace;
+    }
+    p {
+    color: #8AA624;
+    font-family: monospace;
+    }
+    #add {
+  background-color: #00f7ff; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    #remove {
+  background-color: #ff0000; /* Green */
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    #do-nothing {
+  background-color: #767676; /* Green */
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+    #reset {
+  background-color: #2890b9; /* Green */
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+<html>
+<head>
+    <script src="script.js"></script>
+</head>
+<h1>Ur todo list</h1>
+<p id="mylistis" >ur todo list here</p>
+<textarea placeholder="What do u want to do? lol, no weldening" id="input"></textarea>
+<button id="add" onclick="addtolist(document.getElementById('input').value)">add</button>
+<button id="remove" onclick="deletelist(document.getElementById('input').value)">remove</button>
+<button id="do-nothing">do nothing</button>
+<button id="reset" onclick="resetmylist()">reset</button>
+</html>
